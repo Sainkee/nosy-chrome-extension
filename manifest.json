@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "name": "nosy",
+  "description": "Chrome extension to add spying features.",
+  "author": "Mr. Santosh kumar Gupta",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/spy.png",
+    "32": "icons/spy.png",
+    "48": "icons/spy.png",
+    "128": "icons/spy.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["assets/styles/style.css"],
+      "js": ["dist/script.js"]
+    }
+  ]
+}

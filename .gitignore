@@ -1,0 +1,29 @@
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore package-lock.json for npm
+package-lock.json
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+
+# Ignore logs and other generated files
+logs/
+*.log
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore configuration files with sensitive information
+config.ini
+secrets.yml
+
+# Ignore node_modules directory
+node_modules/
