@@ -19,7 +19,7 @@
     {
       "matches": ["https://*/*"],
       "css": ["assets/styles/style.css"],
-      "js": ["dist/script.js", "/content_scripts/postUi.js"]
+      "js": ["dist/script.js"]
     }
   ],
   "content_security_policy": {

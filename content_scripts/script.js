@@ -110,46 +110,66 @@ function handleKeyDown(event) {
 document.addEventListener("keydown", handleKeyDown);
 
 // ============================================================================================================================================================
-// content_scripts/hoverButton.js
 
-// Function to create the button
-// function injectButton() {
-//   // Select all input[type=text] and textarea elements
-//   const inputElements = document.querySelectorAll(
-//     'input[type="text"], textarea'
-//   );
+// let buttonCreated = false; // Flag to track button creation
 
-//   // Inject the button into each element
-//   inputElements.forEach((element) => {
-//     // Create a new button element
-//     const button = document.createElement("button");
-//     button.textContent = "Click me"; // Set button text
-//     button.classList.add("my-button-class"); // Add any desired CSS classes
+// if (!buttonCreated) {
+//   // Check if a comment box form is clicked
+//   document.body.addEventListener("click", (e) => {
+//     if (e.target.classList.contains("comments-comment-box__form")) {
+//       let divId = e.target.id;
 
-//     // Find the parent element where you want to insert the button
-//     const parentElement = document.querySelector(
-//       ".quick-action-compose-trigger"
-//     );
+//       const targetElement = document.getElementById(divId);
 
-//     // Insert the button into the parent element
-//     parentElement.appendChild(button);
+//       if (targetElement) {
+//         let btnDiv = document.createElement("span");
+//         let buttonForComment = document.createElement("button");
 
-//     // Insert the button after the input/textarea element
-//     element.parentNode.insertBefore(button, element.nextSibling);
+//         buttonForComment.setAttribute("class", "aiSearch");
+//         btnDiv.classList.add(
+//           "artdeco-button",
+//           "artdeco-button--circle",
+//           "artdeco-button--muted"
+//         );
+
+//         btnDiv.appendChild(buttonForComment);
+
+//         targetElement.insertBefore(btnDiv, targetElement.firstChild);
+
+//         buttonCreated = true; // Set flag after button creation
+//       } else {
+//         console.error("Element with ID", divId, "not found");
+//       }
+//     }
 //   });
+// } else {
+//   console.log("Button already created. Click ignored.");
 // }
 
-// document.addEventListener("click", (e) => {
-// if (
-//   e.target.className ===
-//   "artdeco-hoverable-trigger artdeco-hoverable-trigger--content-placed-top artdeco-hoverable-trigger--is-hoverable ember-view feed-shared-social-action-bar__action-button"
-// ) {
-//   console.log("Button clicked");
-//   let ref = document.querySelectorAll(
-//     ".comments-comment-box-comment__text-editor"
-//   );
-//   console.log(ref);
-// }
-// });
+document.addEventListener("click", function (e) {
+  console.log(e.target.className);
 
-// console.log("clicked");
+  if (e.target.classList.contains("artdeco-button__text")) {
+    let alldiv = document.querySelectorAll(".mlA");
+
+    for (let i = 0; i < alldiv.length; i++) {
+      console.log(alldiv[i]);
+      if (alldiv[i].dataset.sy !== "true") {
+        let wrap = document.createElement("div");
+        wrap.setAttribute("class", "comments-comment-box-comment__text-editor");
+        wrap.classList.add("wrapAi");
+        let btn = document.createElement("button");
+        btn.setAttribute("class", "aiSearch");
+        wrap.appendChild(btn);
+        alldiv[i].insertBefore(wrap, alldiv[i].firstChild);
+        alldiv[i].dataset.sy = "true";
+        console.log("btn is creating");
+      }
+    }
+  }
+});
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("aiSearch")) {
+  }
+});
