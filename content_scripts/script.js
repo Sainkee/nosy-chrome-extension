@@ -149,7 +149,10 @@ document.addEventListener("keydown", handleKeyDown);
 document.addEventListener("click", function (e) {
   console.log(e.target.className);
 
-  if (e.target.classList.contains("artdeco-button__text")) {
+  if (
+    e.target.classList.contains("artdeco-button__text") ||
+    e.target.classList.contains("artdeco-button")
+  ) {
     let alldiv = document.querySelectorAll(".mlA");
 
     for (let i = 0; i < alldiv.length; i++) {
@@ -171,5 +174,61 @@ document.addEventListener("click", function (e) {
 
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("aiSearch")) {
+    // Create a div element for the popup
+    let popup = document.createElement("div");
+    popup.classList.add("popup-container"); // Add the CSS class to the popup container
+
+    // Set the innerHTML of the div to include an input field and buttons
+    popup.innerHTML = `
+  <input type="text" id="textInputPop" placeholder="Enter text">
+  <button id="submitBtn">Geminai &#128269;</button>
+  <button id="copyBtn">Copy to Clipboard</button>
+  <button id="closeBtn">Cancel</button>
+`;
+
+    // Append the div element to the document body
+    body.style.position = "relative";
+    document.body.appendChild(popup);
+    let submitBtn = document.getElementById("submitBtn");
+    let copyBtn = document.getElementById("copyBtn");
+    let closeBtn = document.getElementById("closeBtn");
+
+    // Add event listeners to the buttons
+    submitBtn.addEventListener("click", submitData);
+    copyBtn.addEventListener("click", copyToClipboard);
+    closeBtn.addEventListener("click", closePopup);
+
+    function closePopup() {
+      // Remove the popup from the document body
+      document.body.removeChild(popup);
+    }
   }
 });
+
+// Function to submit data
+function submitData() {
+  console.log("Submit");
+  // Get the value from the input field
+  var inputValue = document.getElementById("textInputPop").value;
+  // Do something with the value (for example, display it)
+  alert("You entered: " + inputValue);
+
+  // Close the popup
+  // closePopup();
+}
+
+// Function to close the popup
+// function closePopup() {
+//   // Remove the popup from the document body
+//   document.body.removeChild(popup);
+// }
+
+// Function to copy text to clipboard
+function copyToClipboard() {
+  var copyText = document.getElementById("textInputPop").value;
+  navigator.clipboard.writeText(copyText).then(() => {
+    // Alert the user that the action took place.
+    // Nobody likes hidden stuff being done under the hood!
+    alert("Copied to clipboard" + copyText);
+  });
+}

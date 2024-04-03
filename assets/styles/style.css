@@ -80,3 +80,43 @@
   justify-content: center;
   align-items: center;
 }
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+
+  align-items: center;
+}
+
+.popup-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e1e9ee;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #0073b1; /* LinkedIn blue */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.popup-container button:hover {
+  background-color: #005682; /* Darker shade of LinkedIn blue */
+}

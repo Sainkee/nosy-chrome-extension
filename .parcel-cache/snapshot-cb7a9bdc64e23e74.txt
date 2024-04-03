@@ -1,4 +1,4 @@
-5899
+5900
 109C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\runtime-js\src\helpers\browser\js-loader.js133563548578877492 0
 96C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-tree\lib\syntax\node\Identifier.js133563548585866211 0
 113C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\_\_initializer_warning_helper\package.json133563548587643339 0
@@ -34,7 +34,7 @@
 92C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\type-fest\ts41\delimiter-case.d.ts133563548575967415 0
 101C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-tree\cjs\tokenizer\OffsetToLocation.cjs133563548583394772 0
 114C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\entities\lib\esm\decode.d.ts.map133563548579537694 0
-49C:\Users\LENOVO\Desktop\crome extension\Nosy\dist133566105477125064 1
+49C:\Users\LENOVO\Desktop\crome extension\Nosy\dist133566196910179529 1
 93C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\svgo\plugins\removeEditorsNSData.js133563548582225273 0
 80C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\compressor-raw133563548572888738 1
 89C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\type-fest\source\utilities.d.ts133563548580068256 0
@@ -43,7 +43,7 @@
 129C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Raw.js133563548583997949 0
 88C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\workers\src\backend.js133563548572449884 0
 93C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\htmlnano\lib\modules\minifyJson.cjs133563548577381222 0
-58C:\Users\LENOVO\Desktop\crome extension\Nosy\manifest.json133566105729177323 0
+58C:\Users\LENOVO\Desktop\crome extension\Nosy\manifest.json133566181594317752 0
 80C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-tree\cjs\tokenizer133563548584551958 1
 63C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\chalk133563548574487146 1
 101C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\lmdb\dependencies\lz4\lib\lz4frame_static.h133563548584183189 0
@@ -72,7 +72,7 @@
 90C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\svgo\plugins\removeEmptyAttrs.js133563548582373751 0
 120C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\dom-serializer\node_modules\entities\lib\decode_codepoint.d.ts133563548576928638 0
 71C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\clone\LICENSE133563548572805260 0
-60C:\Users\LENOVO\Desktop\crome extension\Nosy\content_scripts133566105250787930 1
+60C:\Users\LENOVO\Desktop\crome extension\Nosy\content_scripts133566129642792581 1
 67C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@mischnic133563550418115181 1
 101C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\features\localecompare.js133563548590870672 0
 89C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\domutils\lib\stringify.d.ts.map133563548576968671 0
@@ -108,7 +108,7 @@
 103C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\runtime-js\src\helpers\cacheLoader.js133563548575054054 0
 66C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\escalade133563548574878246 1
 86C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-tree\cjs\lexer\error.cjs133563548579877529 0
-63C:\Users\LENOVO\Desktop\crome extension\Nosy\dist\script.js.map133566105477101975 0
+63C:\Users\LENOVO\Desktop\crome extension\Nosy\dist\script.js.map133566196910168028 0
 67C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\commander133563548575195766 1
 114C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domutils\lib\esm\querying.js.map133563548580183887 0
 75C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\js-tokens\LICENSE133563548572805260 0
@@ -3496,7 +3496,7 @@
 118C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domutils\lib\esm\manipulation.js.map133563548579797487 0
 111C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domutils\lib\esm\package.json133563548577347815 0
 112C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domutils\lib\esm\querying.d.ts133563548581807153 0
-59C:\Users\LENOVO\Desktop\crome extension\Nosy\dist\script.js133566105477055276 0
+59C:\Users\LENOVO\Desktop\crome extension\Nosy\dist\script.js133566196910090720 0
 110C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domutils\lib\esm\querying.js133563548576147326 0
 121C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\src\index.js133563548582810471 0
 113C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domutils\lib\esm\stringify.d.ts133563548581907040 0
@@ -5770,7 +5770,7 @@
 95C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\Dependency.js133563548581907040 0
 96C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\Environment.js133563548582522350 0
 103C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\MutableBundleGraph.js133563548583650066 0
-70C:\Users\LENOVO\Desktop\crome extension\Nosy\content_scripts\script.js133566099557320396 0
+70C:\Users\LENOVO\Desktop\crome extension\Nosy\content_scripts\script.js133566196841590411 0
 98C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\PluginOptions.js133563548584373625 0
 69C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\.bin\parcel133563550407023105 0
 92C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\Symbols.js133563548585183646 0
@@ -5895,6 +5895,7 @@
 85C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\.bin\update-browserslist-db133563550407023105 0
 89C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\.bin\update-browserslist-db.cmd133563550407023105 0
 58C:\Users\LENOVO\Desktop\crome extension\Nosy\icons\spy.png133562828941303294 0
+69C:\Users\LENOVO\Desktop\crome extension\Nosy\content_scripts\popup.js133566121094116790 0
 58C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\images133562829490535572 1
 60C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\planning133563355310566680 1
-68C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\styles\style.css133565999433772254 0
+68C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\styles\style.css133566156467692207 0
