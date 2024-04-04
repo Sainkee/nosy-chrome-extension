@@ -1,4 +1,4 @@
-5903
+5904
 109C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\runtime-js\src\helpers\browser\js-loader.js133563548578877492 0
 96C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-tree\lib\syntax\node\Identifier.js133563548585866211 0
 113C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\_\_initializer_warning_helper\package.json133563548587643339 0
@@ -93,6 +93,12 @@
 89C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\regions\IT.js133563548590186486 0
 87C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@babel\highlight\node_modules133563548565568600 1
 92C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\svgo\plugins\convertShapeToPath.js133563548581073354 0
+78C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\postcss-value-parser133563548574835418 1
+78C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\_\index133563548588529354 1
+103C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-svg\src\SVGTransformer.js133563548575054054 0
+54C:\Users\LENOVO\Desktop\crome extension\Nosy\README.md133567120460015370 0
+77C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\detect-libc\LICENSE133563548572957558 0
+76C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\chrome-trace-event133563548574487146 1
 62C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\.bin133563550407023105 1
 87C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\react-error-overlay\README.md133563548575238803 0
 111C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\abortcontroller-polyfill\dist\polyfill-patch-fetch.js133563548575272910 0
@@ -180,10 +186,6 @@
 104C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\csso\node_modules\css-tree\dist\csstree.esm.js133563548585231155 0
 65C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\is-glob133563548572659780 1
 70C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite133563548595454975 1
-78C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\postcss-value-parser133563548574835418 1
-78C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\_\index133563548588529354 1
-77C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\detect-libc\LICENSE133563548572957558 0
-76C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\chrome-trace-event133563548574487146 1
 106C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\entities\lib\decode.d.ts133563548581793551 0
 97C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\csso\node_modules\css-tree\dist\data.js133563548585370133 0
 73C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\semver\index.js133563548577522645 0
@@ -251,14 +253,6 @@
 70C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\lmdb\read.js133563548584800312 0
 69C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\detect-libc133563548573978830 1
 88C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\detect-libc\lib\detect-libc.js133563548574369897 0
-77C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\react-error-overlay133563548575157928 1
-105C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\features\deviceorientation.js133563548587816078 0
-105C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\features\css-text-box-trim.js133563548587113849 0
-75C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data133563548588430962 1
-87C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\_\_object_spread133563548587947783 1
-79C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\mdn-data\api\index.js133563548571822382 0
-113C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Function.cjs133563548580229358 0
-65C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\is-json133563548574228527 1
 95C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\svgo\plugins\moveElemsAttrsToGroup.js133563548581555801 0
 98C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\lmdb\dependencies\lmdb-data-v1\libraries133563548571145338 1
 99C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\features\css-subgrid.js133563548586947996 0
@@ -320,6 +314,14 @@
 70C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\import-fresh133563548573258401 1
 85C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\cosmiconfig\dist\loaders.js133563548574146129 0
 83C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\lib\general.js133563548576263924 0
+77C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\react-error-overlay133563548575157928 1
+105C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\features\deviceorientation.js133563548587816078 0
+105C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data\features\css-text-box-trim.js133563548587113849 0
+75C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\caniuse-lite\data133563548588430962 1
+87C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\_\_object_spread133563548587947783 1
+79C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\mdn-data\api\index.js133563548571822382 0
+113C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Function.cjs133563548580229358 0
+65C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\is-json133563548574228527 1
 87C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\posthtml-parser\dist\index.js133563548572394024 0
 67C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\js-tokens133563548573258401 1
 110C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-select\node_modules\domhandler\lib\node.d.ts.map133563548575967415 0
@@ -3118,11 +3120,11 @@
 79C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-what\lib\commonjs133563548578546948 1
 87C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@swc\helpers\esm\_to_array.js133563548585452472 0
 84C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-what\lib\es\index.d.ts133563548577884415 0
-90C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\Asset.js133563548578247362 0
-84C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-what\lib\es\types.d.ts133563548578730737 0
 137C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\atrule\font-face.js133563548581021346 0
 93C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\runtime-js\lib\helpers\node133563548580049801 1
 97C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-tree\cjs\syntax\node\Percentage.cjs133563548583682695 0
+90C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\core\lib\public\Asset.js133563548578247362 0
+84C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-what\lib\es\types.d.ts133563548578730737 0
 103C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-postcss\src\loadConfig.js133563548573721112 0
 88C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-what\lib\es\types.d.ts.map133563548577381222 0
 94C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\css-what\lib\commonjs\parse.d.ts.map133563548576386455 0
@@ -4831,7 +4833,6 @@
 101C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-svg\src\dependencies.js133563548572473008 0
 88C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@lezer\common\dist\index.d.cts133563548573380559 0
 95C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-svg\src\inline.js133563548573721112 0
-103C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-svg\src\SVGTransformer.js133563548575054054 0
 101C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-svg\lib\dependencies.js133563548571727205 0
 103C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-svg\lib\SVGTransformer.js133563548574746643 0
 104C:\Users\LENOVO\Desktop\crome extension\Nosy\node_modules\@parcel\transformer-react-refresh-wrap\LICENSE133563548570757419 0
@@ -5900,5 +5901,5 @@
 69C:\Users\LENOVO\Desktop\crome extension\Nosy\content_scripts\popup.js133566121094116790 0
 58C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\images133567065057981286 1
 60C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\planning133563355310566680 1
-68C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\styles\style.css133567119366514717 0
+68C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\styles\style.css133567128439198489 0
 67C:\Users\LENOVO\Desktop\crome extension\Nosy\assets\images\mike.gif133567061133246235 0
