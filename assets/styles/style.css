@@ -16,6 +16,27 @@
   animation: pulse 3s infinite alternate;
 }
 
+.gemSearch {
+  border-radius: 50%;
+  background-color: rgb(5, 81, 181);
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  bottom: 8%;
+  text-align: center;
+  color: white !important;
+  right: 1%;
+
+  cursor: pointer;
+  z-index: 1000000000000;
+  padding: 2px;
+  background-image: cover;
+  background-repeat: no-repeat;
+  &:hover {
+    background-image: linear-gradient(to bottom, red, blue);
+  }
+}
+
 #btnNosy:hover {
   transform: translateY(-3px);
   box-shadow: 0 0px 20px rgba(235, 233, 233, 0.678);

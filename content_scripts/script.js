@@ -6,6 +6,10 @@ let body = document.body;
 let btn = document.createElement("button");
 btn.setAttribute("id", "btnNosy");
 body.appendChild(btn);
+let geminiSearch = document.createElement("div");
+geminiSearch.setAttribute("class", "gemSearch");
+geminiSearch.innerText = "AI";
+body.appendChild(geminiSearch);
 // ========================================================================
 
 function createToast(message, duration = 3000) {
@@ -172,14 +176,17 @@ document.addEventListener("click", function (e) {
 
 let popup = "";
 document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("aiSearch")) {
+  if (
+    e.target.classList.contains("aiSearch") ||
+    e.target.classList.contains("gemSearch")
+  ) {
     // Create a div element for the popup
     popup = document.createElement("div");
     popup.classList.add("popup-container"); // Add the CSS class to the popup container
     // Set the innerHTML of the div to include an input field and buttons
     popup.innerHTML = `
-    <p class="q-title">Query Here With AI</p>
-  <input type="text" id="textInputPop" placeholder="Enter text">
+    <p class="q-title">WelCome To Gemini AI</p>
+  <input type="text" id="textInputPop" placeholder="Search AnyThing...">
   <p class="showRes"><div class="loader" id="loader"></div> </p>
   <button id="submitBtn">Geminai &#128269;</button>
   <button id="copyBtn">Copy & Close</button>
