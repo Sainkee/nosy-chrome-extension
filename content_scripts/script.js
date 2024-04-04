@@ -1,9 +1,38 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+const API_KEY = "AIzaSyCmd3guYR-kltQEsUeapkg66iQq1gE3RlI";
+const genAI = new GoogleGenerativeAI(API_KEY);
 
 let body = document.body;
 let btn = document.createElement("button");
 btn.setAttribute("id", "btnNosy");
 body.appendChild(btn);
+// ========================================================================
+
+function createToast(message, duration = 3000) {
+  // 1. Create the toast element dynamically
+  const toast = document.createElement("div");
+  toast.classList.add("toast"); // Add a class for styling (CSS needed later)
+  toast.innerText = message;
+
+  // 2. (Optional) Create a close button element
+  const closeButton = document.createElement("button");
+  closeButton.innerText = "X";
+  closeButton.classList.add("close-button"); // Add a class for styling (CSS needed later)
+  closeButton.addEventListener("click", function () {
+    toast.remove();
+  });
+  toast.appendChild(closeButton); // Add the close button to the toast
+
+  // 3. Append the toast to the body (consider positioning)
+  document.body.appendChild(toast);
+
+  // 4. Set a timeout to remove the toast automatically
+  setTimeout(() => {
+    toast.remove();
+  }, duration);
+}
+
+// =====================================================================
 
 btn.addEventListener("click", () => {
   btn.toggleAttribute("listener");
@@ -48,11 +77,6 @@ async function generateResponse(prompt) {
 
 // ai integration parts
 
-const API_KEY = "AIzaSyCmd3guYR-kltQEsUeapkg66iQq1gE3RlI";
-
-// Replace with your actual API key
-const genAI = new GoogleGenerativeAI(API_KEY);
-
 async function generateLink(Linkprompt) {
   console.log("im in link=>", Linkprompt);
 
@@ -96,8 +120,6 @@ function extractLinks(responseText) {
   return formattedLinks;
 }
 
-// handle keyPress events
-
 function handleKeyDown(event) {
   // Check if ctrl and Space keys are pressed simultaneously
   if (event.ctrlKey && event.code === "Space") {
@@ -111,47 +133,14 @@ document.addEventListener("keydown", handleKeyDown);
 
 // ============================================================================================================================================================
 
-// let buttonCreated = false; // Flag to track button creation
-
-// if (!buttonCreated) {
-//   // Check if a comment box form is clicked
-//   document.body.addEventListener("click", (e) => {
-//     if (e.target.classList.contains("comments-comment-box__form")) {
-//       let divId = e.target.id;
-
-//       const targetElement = document.getElementById(divId);
-
-//       if (targetElement) {
-//         let btnDiv = document.createElement("span");
-//         let buttonForComment = document.createElement("button");
-
-//         buttonForComment.setAttribute("class", "aiSearch");
-//         btnDiv.classList.add(
-//           "artdeco-button",
-//           "artdeco-button--circle",
-//           "artdeco-button--muted"
-//         );
-
-//         btnDiv.appendChild(buttonForComment);
-
-//         targetElement.insertBefore(btnDiv, targetElement.firstChild);
-
-//         buttonCreated = true; // Set flag after button creation
-//       } else {
-//         console.error("Element with ID", divId, "not found");
-//       }
-//     }
-//   });
-// } else {
-//   console.log("Button already created. Click ignored.");
-// }
-
 document.addEventListener("click", function (e) {
   console.log(e.target.className);
 
   if (
     e.target.classList.contains("artdeco-button__text") ||
-    e.target.classList.contains("artdeco-button")
+    e.target.classList.contains("artdeco-button") ||
+    (e.target.tagName === "SPAN" && e.target.textContent.trim() === "Reply") ||
+    e.target.classList.contains("artdeco-button__icon")
   ) {
     let alldiv = document.querySelectorAll(".mlA");
 
@@ -169,21 +158,33 @@ document.addEventListener("click", function (e) {
         console.log("btn is creating");
       }
     }
+  } else if (e.target.classList.contains("ql-container")) {
+    let postDiv = document.querySelectorAll(".ql-container");
+    let wrap = document.createElement("div");
+    wrap.setAttribute("class", "comments-comment-box-comment__text-editor");
+    wrap.classList.add("wrapAi");
+    let btn = document.createElement("button");
+    btn.setAttribute("class", "aiSearch");
+    wrap.appendChild(btn);
+    postDiv.appendChild(wrap);
   }
 });
 
+let popup = "";
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("aiSearch")) {
     // Create a div element for the popup
-    let popup = document.createElement("div");
+    popup = document.createElement("div");
     popup.classList.add("popup-container"); // Add the CSS class to the popup container
-
     // Set the innerHTML of the div to include an input field and buttons
     popup.innerHTML = `
+    <p class="q-title">Query Here With AI</p>
   <input type="text" id="textInputPop" placeholder="Enter text">
+  <p class="showRes"><div class="loader" id="loader"></div> </p>
   <button id="submitBtn">Geminai &#128269;</button>
-  <button id="copyBtn">Copy to Clipboard</button>
-  <button id="closeBtn">Cancel</button>
+  <button id="copyBtn">Copy & Close</button>
+  <button id="closeBtn">Close</button>
+  
 `;
 
     // Append the div element to the document body
@@ -205,30 +206,49 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Function to submit data
-function submitData() {
-  console.log("Submit");
-  // Get the value from the input field
+async function submitData() {
   var inputValue = document.getElementById("textInputPop").value;
-  // Do something with the value (for example, display it)
-  alert("You entered: " + inputValue);
 
-  // Close the popup
-  // closePopup();
+  if (inputValue == "") {
+    createToast("Please Query First!");
+    return;
+  }
+
+  let aiRes = await getgeminAiRes(inputValue);
+  console.log(aiRes);
+  document.querySelector(".showRes").innerText = aiRes;
 }
-
-// Function to close the popup
-// function closePopup() {
-//   // Remove the popup from the document body
-//   document.body.removeChild(popup);
-// }
 
 // Function to copy text to clipboard
 function copyToClipboard() {
-  var copyText = document.getElementById("textInputPop").value;
+  var copyText = document.querySelector(".showRes").innerText;
+  if (copyText == "") {
+    createToast("There is nothing to copy");
+    return;
+  }
   navigator.clipboard.writeText(copyText).then(() => {
-    // Alert the user that the action took place.
-    // Nobody likes hidden stuff being done under the hood!
-    alert("Copied to clipboard" + copyText);
+    createToast("Copied to clipboard");
+    copyText.value = "";
+    document.body.removeChild(popup);
   });
+}
+
+async function getgeminAiRes(commentPrompt) {
+  let loader = document.querySelector(".loader");
+  try {
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    loader.style.display = "block";
+
+    const result = await model.generateContent(
+      `Considering the prompt: ` +
+        commentPrompt +
+        `, and return short trimmed ready to paste comment integrated emojeies and match with mood and no markdown ?`
+    );
+
+    let response = result.response.text().trim();
+    loader.style.display = "none";
+    return response;
+  } catch (error) {
+    console.error("Error generating or handling link:", error);
+  }
 }

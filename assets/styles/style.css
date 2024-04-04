@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
 #btnNosy {
-  background-color: rgb(255, 165, 127);
   border-radius: 50%;
+  background-color: rgb(3, 114, 204);
   height: 20px;
   width: 20px;
   border: 1px solid transparent;
@@ -19,13 +24,17 @@
 }
 
 @keyframes pulse {
-  0% {
+  from {
     transform: scale(1);
-    background-color: rgb(255, 8, 0);
+    background-color: rgba(255, 8, 0, 0.896); /* Red with opacity */
   }
-  100% {
+  50% {
+    transform: scale(1.2); /* Midway scale for a subtle bounce effect */
+    background-color: rgba(255, 192, 0, 0.896); /* Brighter red in the middle */
+  }
+  to {
     transform: scale(1.5);
-    background-color: rgb(0, 255, 13);
+    background-color: rgba(0, 255, 13, 0.807); /* Green with opacity */
   }
 }
 
@@ -34,17 +43,17 @@
   background-image: radial-gradient(
       circle at 50% 50%,
       rgba(255, 255, 255, 0.8) 0%,
-      rgba(255, 255, 255, 0) 70%
+      rgba(235, 5, 5, 0.792) 70%
     ),
     radial-gradient(
       circle at 50% 50%,
       rgba(255, 255, 255, 0.6) 0%,
-      rgba(255, 255, 255, 0) 50%
+      rgba(109, 234, 14, 0.919) 50%
     ),
     radial-gradient(
       circle at 50% 50%,
       rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 30%
+      rgba(12, 42, 233, 0.874) 30%
     );
   animation: pulse 0.2s infinite alternate;
 }
@@ -82,7 +91,7 @@
 }
 .popup-container {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -90,19 +99,24 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 10000;
-
   align-items: center;
 }
 
 .popup-container input[type="text"] {
   width: 100%;
-  padding: 10px;
+  padding: 1.5em;
   margin-bottom: 15px;
   border: 1px solid #e1e9ee;
   border-radius: 4px;
+  margin: 10px auto;
   box-sizing: border-box;
+  word-wrap: break-word;
+  outline: none !important;
 }
-
+.popup-container input[type="text"]::placeholder {
+  padding: 2px;
+  color: #999;
+}
 .popup-container button {
   padding: 10px 20px;
   margin: 5px;
@@ -119,4 +133,68 @@
 
 .popup-container button:hover {
   background-color: #005682; /* Darker shade of LinkedIn blue */
+}
+
+.showRes {
+  max-height: 200px !important;
+  overflow-y: scroll;
+  padding: 5px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  animation: spin 2s linear infinite;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 36%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.q-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0073b1;
+  text-align: start;
+  padding: 7px auto;
+}
+.toast {
+  position: fixed;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  right: 10px;
+  z-index: 100000000;
+  background-image: linear-gradient(
+    to right,
+    rgb(209, 209, 13),
+    rgb(5, 180, 234)
+  );
+
+  padding: 10px;
+}
+
+.close-button {
+  padding: 3px 10px;
+  color: white !important;
+  background-color: red !important;
+  border-radius: 7px;
 }
